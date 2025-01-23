@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supra Aural | Grabación</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/javascript/script.js" defer></script>
+    <script src="/javascript/navbar.js"></script>
+</head>
+<body>
+    <main class="main">
+        <special-navbar></special-navbar>
+
+        <div class="container align-items-center flex-column">
+            <div class="container grabacion-container">
+                <div class="container grabacion-div">
+                    <p>Comprendemos el esmero que como músico le has puesto a tu trabajo, nosotros contamos con las herramientas necesarias para capturarlo de la forma que merece, utilizando los mejores micrófonos antiguos y modernos.</p>
+                    <p>Nos importa capturar la emoción del momento, por ello ofrecemos la posibilidad de grabar simultáneamente hasta 5 músicos, con monitoreo independiente.</p>
+                </div>
+                <div class="container grabacion-div">
+                    <p>Para la comodidad de los músicos, el estudio cuenta con instrumentos musicales de la más alta calidad, disponibles para su uso sin costo adicional.</p>
+                    <p>En caso de no tener músicos que te acompañen, tenemos lazos establecidos con diferentes músicos de trayectoria quienes están disponibles como músicos de sesión y arreglistas.</p>
+                </div>
+            </div>
+    
+            <div class="container photo-slide">
+                <img src="https://www.supraural.com/images/grabacion-04.jpg" alt="" class="slides fade-in-img">
+                <img src="https://www.supraural.com/images/grabacion-02.jpg" alt="" class="slides fade-in-img">
+                <img src="https://www.supraural.com/images/grabacion-03.jpg" alt="" class="slides fade-in-img">
+                <img src="https://www.supraural.com/images/grabacion-01.jpg" alt="" class="slides fade-in-img">
+    
+                <div class="container slide-button-container">
+                    <button class="slide-button" onclick="moveDivs(-1)">&#10094;</button>
+                    <button class="slide-button" onclick="moveDivs(+1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <div class="fill-remaining-vertical"></div>
+
+        <special-footer></special-footer>
+    </main>
+</body>
+</html>
