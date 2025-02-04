@@ -5,14 +5,14 @@ class SpecialNavbar extends HTMLElement {
             <div class="container navbar">
                 <div class="container logo">
                     <a class="container" href="../index.html">
-                        <img src="https://www.supraural.com/images/supraural-logo.jpg" alt="Inicio">
+                        <img class="logo-img" src="../images/logo.jpg" alt="Inicio">
                     </a>
                 </div>
                 <div class="container menu">
                     <a class="container menu-link" href="../index.html">INICIO</a>
 
-                    <div class="container menu-link" id="menu" href="/html/servicios.html">
-                        <a class="container menu-link" id="menu" href="/html/servicios.html">SERVICIOS ▼</a>
+                    <div class="container menu-link" id="menu" href="../html/servicios.html">
+                        <a class="container menu-link" id="menu" href="../html/servicios.html">SERVICIOS ▼</a>
                         <div class="container servicios-menu">
                             <a class="container" href="../html/grabacion.html">GRABACION</a>
                             <a class="container" href="../html/mezcla.html">MEZCLA & MASTERING</a>
