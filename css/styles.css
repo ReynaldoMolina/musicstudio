@@ -1,0 +1,451 @@
+:root {
+    --background-gray: #212121;
+    --header-gray: #383838;
+    --white: #FFFFFF;
+    --border-gray: rgb(136, 93, 93);
+    --link-hover: darkkhaki;
+    --link-clicked: rgb(255, 255, 160);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    height: 100%;
+}
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+.main{
+    background-image: url("https://www.supraural.com/images/fondo-de-pagina.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fill-remaining-vertical {
+    flex-grow: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.navbar-container{
+    height: 200px;
+    background-image: url("https://www.supraural.com/images/grabacion-04.jpg");
+    background-size: cover;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.navbar{
+    width: 100%;
+    max-width: 900px;
+}
+.logo{
+    margin-right: 2px;
+}
+.logo a {
+    align-items: end;
+}
+
+.menu {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: end;
+    min-width: 330px;
+    position: relative;
+}
+#menu {
+    position: relative;
+    padding: 0;
+}
+#menu:hover > .servicios-menu {
+    display: flex;
+}
+/*Servicios menu*/
+.servicios-menu {
+    position: absolute;
+    background-color: brown;
+    height: 125px;
+    min-width: 80px;
+    top: 41px;
+    z-index: 3;
+    display: none;
+}
+.servicios-menu a {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.servicios-menu a:hover {
+    background-color: white;
+    color: brown;
+}
+/*Menu*/
+.menu-link {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 41px;
+    flex-basis: 80px;
+    background-color: brown;
+    margin-right: 2px;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.menu-link:last-child {
+    margin-right: 0px;
+}
+.menu-link:hover {
+    color: brown;
+    background-color: var(--white);
+}
+.photo-slide{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.photo-slide img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    max-width: 900px;
+}
+.slides {
+    position: relative;
+}
+.fade-in-img {
+    position: absolute;
+    animation: fade-in 2s;
+    z-index: 2;
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.slide-button-container {
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 900px;
+    z-index: 3;
+}
+.slide-button {
+    color: black;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: none;
+}
+.slide-button:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+/*Main - info*/
+.info {
+    flex-direction: column;
+    margin: 25px 4% 0;
+    align-items: center;
+}
+
+.info p {
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 900px;
+}
+.info p:last-child {
+    margin-bottom: 0px;
+}
+
+/*Servicios*/
+.service-container {
+    justify-content: center;
+}
+.card-container{
+    width: 99%;
+    margin: 0 7%;
+    align-items: center;
+    flex-direction: column;
+    max-width: 750px;
+}
+.service-card {
+    margin: 15px 0;
+    height: 24vw;
+    justify-content: left;
+    align-items: start;
+    max-height: 220px;
+}
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+.service-card:hover > .service-card-img {
+    filter: drop-shadow(7px 7px 3px black);
+    width: 99%;
+    height: auto;
+}
+
+/*Grabacion*/
+.grabacion-container {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 4% 25px;
+}
+.grabacion-div {
+    flex-basis: 100px;
+    min-width: 330px;
+    margin: 7px 2%;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.grabacion-div p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.grabacion-div p:last-child {
+    margin-bottom: 0;
+}
+
+/*Mezcla & mastering*/
+.container-mezcla {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 4%;
+}
+.mezcla-div {
+    flex-grow: 1;
+    flex-basis: 40%;
+    max-width: 900px;
+    justify-content: center;
+    min-width: 330px;
+    margin: 3% 10px;
+    align-items: center;
+}
+.mezcla-div img {
+    width: 100%;
+    overflow: hidden;
+}
+.mezcla-div p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.mezcla-div p:last-child {
+    margin-bottom: 0;
+}
+#mezcla-p {
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Reamping*/
+.container-reamp {
+    flex-direction: row;
+    align-items: start;
+    max-width: 900px;
+}
+.reamp-slide {
+    margin: 20px 0 0;
+    flex-basis: 330px;
+    justify-content: center;
+    flex-grow: 1;
+}
+.reamp-div {
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0px 4%;
+    align-items: center;
+    flex-basis: 330px;
+}
+.reamp-div img {
+    width: 100%;
+    overflow: hidden;
+}
+.reamp-div p {
+    margin-bottom: 15px;
+    text-align: justify;
+    width: 100%;
+}
+.reamp-div ul {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    padding: 0 30px;
+    width: 100%;
+}.reamp-div ul:last-child {
+    margin-bottom: 0;
+}
+.reamp-div p:last-child {
+    margin-bottom: 0;
+}
+.reamp-div a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Lista de equipos*/
+.equipo-div {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 330px;
+    max-width: 900px;
+    justify-content: flex-start;
+    margin: 25px 10px 0;
+    align-items: center;
+}
+.equipo-slide {
+    max-width: 522px;
+}
+.equipo-div h1 {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.514);
+    padding: 5px;
+}
+.equipo-div h2 {
+    margin: 15px 0;
+}
+.equipo-div p {
+    margin-bottom: 15px;
+    text-align: justify;
+    width: 100%;
+}
+.equipo-div ul {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 0 15px;
+    width: 100%;
+}
+.equipo-div p:last-child {
+    margin-bottom: 0;
+}
+.equipo-div a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Tarifas*/
+.tarifa-info {
+    margin: 0 4%;
+    text-align: center;
+}
+.tarifa-info a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.social-card-container {
+    margin: 30px 4% 0;
+    max-width: 50%;
+    min-width: 300px;
+}
+.social-card {
+    width: 33%;
+    align-items: center;
+    flex-direction: column;
+}
+.social-card:hover {
+    text-decoration: underline;
+}
+.social-card img {
+    width: 50px;  
+    margin-bottom: 10px;  
+}
+
+/*Footer*/
+.footer {
+    background-color: rgba(15, 12, 12, 0.57);
+    min-height: 70px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.footer-container{
+    align-items: center;
+    max-width: 900px;
+    flex-grow: 1;
+    justify-content: end;
+    margin: 5px 3%;
+}
+.footer-info{
+    flex-direction: column;
+    padding: 5px 0;
+}
+.footer p {
+    font-size: 1.3rem;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+.footer a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.address {
+    flex-direction: row;
+    justify-content: right;
+}
+.footer-info a{
+    padding-left: 10px;
+
+}
+.footer-info:first-child{
+    text-align: right;
+    color: var(--white);
+    font-style: italic;
+}
