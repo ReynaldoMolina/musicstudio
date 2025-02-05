@@ -4,24 +4,24 @@ class SpecialNavbar extends HTMLElement {
         <nav class="container navbar-container">
             <div class="container navbar">
                 <div class="container logo">
-                    <a class="container" href="/index.html">
-                        <img class="logo-img" src="/images/logo.jpg" alt="Inicio">
+                    <a class="container" href="index.html">
+                        <img class="logo-img" src="images/logo.jpg" alt="Inicio">
                     </a>
                 </div>
                 <div class="container menu">
-                    <a class="container menu-link" href="/index.html">INICIO</a>
+                    <a class="container menu-link" href="index.html">INICIO</a>
 
-                    <div class="container menu-link" id="menu" href="/html/servicios.html">
-                        <a class="container menu-link" id="menu" href="/html/servicios.html">SERVICIOS ▼</a>
+                    <div class="container menu-link" id="menu" href="html/servicios.html">
+                        <a class="container menu-link" id="menu" href="html/servicios.html">SERVICIOS ▼</a>
                         <div class="container servicios-menu">
-                            <a class="container" href="/html/grabacion.html">GRABACION</a>
-                            <a class="container" href="/html/mezcla.html">MEZCLA & MASTERING</a>
-                            <a class="container" href="/html/reamping.html">REAMPING</a>
+                            <a class="container" href="html/grabacion.html">GRABACION</a>
+                            <a class="container" href="html/mezcla.html">MEZCLA & MASTERING</a>
+                            <a class="container" href="html/reamping.html">REAMPING</a>
                         </div>
                     </div>
                     
-                    <a class="container menu-link" href="/html/equipos.html">LISTA DE EQUIPO</a>
-                    <a class="container menu-link" href="/html/tarifas.html">TARIFAS</a>
+                    <a class="container menu-link" href="html/equipos.html">LISTA DE EQUIPO</a>
+                    <a class="container menu-link" href="html/tarifas.html">TARIFAS</a>
                 </div>  
             </div>
         </nav>
