@@ -1,12 +1,11 @@
 :root {
     --background-gray: #212121;
     --header-gray: #383838;
-    --white: #FFFFFF;
+    /* --white: #FFFFFF;
     --border-gray: rgb(136, 93, 93);
     --link-hover: darkkhaki;
-    --link-clicked: rgb(255, 255, 160);
+    --link-clicked: rgb(255, 255, 160); */
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +18,6 @@ body {
 html {
     font-size: 62.5%;
 }
-
 a {
     text-decoration: none;
     color: white;
@@ -64,7 +62,7 @@ p {
 
 .navbar-container{
     height: 200px;
-    background-image: url("https://www.supraural.com/images/grabacion-04.jpg");
+    background-image: url("../images/navbar-background.jpg");
     background-size: cover;
     align-items: end;
     justify-content: center;
@@ -74,7 +72,7 @@ p {
     width: 100%;
     max-width: 900px;
 }
-.logo{
+.logo {
     margin-right: 2px;
 }
 .logo a {
@@ -136,7 +134,7 @@ p {
 }
 .menu-link:hover {
     color: brown;
-    background-color: var(--white);
+    background-color: white;
 }
 .photo-slide{
     flex-direction: column;
@@ -448,4 +446,13 @@ p {
     text-align: right;
     color: var(--white);
     font-style: italic;
+}
+
+@media (max-width: 650px) {
+    .logo-img {
+        height: 100px;
+    }
+    .menu-link {
+        font-size: 1rem;
+    }
 }

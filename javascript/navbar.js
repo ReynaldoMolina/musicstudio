@@ -5,7 +5,7 @@ class SpecialNavbar extends HTMLElement {
             <div class="container navbar">
                 <div class="container logo">
                     <a class="container" href="/index.html">
-                        <img src="https://www.supraural.com/images/supraural-logo.jpg" alt="Inicio">
+                        <img class="logo-img" src="/images/logo.jpg" alt="Inicio">
                     </a>
                 </div>
                 <div class="container menu">
@@ -43,7 +43,7 @@ class SpecialFooter extends HTMLElement {
                         <a href="https://api.whatsapp.com/send?phone=89131100" target="_blank">(+505) 89131100</a>
                     </div>
                     <div class="container footer-info">
-                        <a class="container" href="http://www.facebook.com/SuprauralStudio" target="_blank">
+                        <a class="container" href="https://www.facebook.com/SuprauralStudio" target="_blank">
                             <img src="https://www.supraural.com/images/icono%20de%20fb.png" alt="Facebook">
                         </a>
                     </div>
