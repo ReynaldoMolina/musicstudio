@@ -5,11 +5,11 @@ class SpecialNavbar extends HTMLElement {
     this.innerHTML = `
       <header class="flx navbar-container">
         <div class="flx navbar">
-          <a class="flx logo" href="/">
+          <a class="flx logo" href="./">
             <img class="logo-img" src="./assets/images/logo.jpg" alt="Inicio">
           </a>
           <menu class="flx menu">
-            <a class="flx menu-link" href="/">INICIO</a>
+            <a class="flx menu-link" href="./">INICIO</a>
 
             <div class="flx flx-col menu-link menu-services" href="./servicios.html">
               <a class="flx menu-link service-link" href="./servicios.html">SERVICIOS ▼</a>
