@@ -35,99 +35,57 @@ p {
     color: white;
     font-size: 1.5rem;
 }
+.flx {
+    display: flex;
+}
+.flx-col {
+    flex-direction: column;
+}
+.flx-center {
+    align-items: center;
+    justify-content: center;
+}
 .main{
-    background-image: url("https://www.supraural.com/images/fondo-de-pagina.jpg");
+    background-image: url("./images/main-background.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.container{
-    display: flex;
-    flex-wrap: wrap;
-}
-.fill-remaining-vertical {
-    flex-grow: 1;
-}
-
-.justify-center {
-    justify-content: center;
-}
-.align-items-center {
-    align-items: center;
-}
-.flex-column {
-    flex-direction: column;
-}
-
 .navbar-container{
-    height: 200px;
-    background-image: url("../images/navbar-background.jpg");
+    padding-top: 58px;
+    background-image: url("./images/navbar-background.jpg");
     background-size: cover;
-    align-items: end;
-    justify-content: center;
     margin-bottom: 25px;
 }
 .navbar{
     width: 100%;
     max-width: 900px;
+    margin: 0 auto;
 }
 .logo {
     margin-right: 2px;
+    width: 311px;
 }
-.logo a {
-    align-items: end;
+.logo-img {
+    width: 100%;
 }
-
 .menu {
     flex-grow: 1;
-    flex-direction: row;
     align-items: end;
-    min-width: 330px;
-    position: relative;
 }
-#menu {
-    position: relative;
-    padding: 0;
-}
-#menu:hover > .servicios-menu {
-    display: flex;
-}
-/*Servicios menu*/
-.servicios-menu {
-    position: absolute;
-    background-color: brown;
-    height: 125px;
-    min-width: 80px;
-    top: 41px;
-    z-index: 3;
-    display: none;
-}
-.servicios-menu a {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2rem;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-}
-.servicios-menu a:hover {
-    background-color: white;
-    color: brown;
-}
-/*Menu*/
 .menu-link {
+    align-items: center;
+    background-color: brown;
+    flex-basis: 20%;
     flex-grow: 1;
     font-size: 1.2rem;
-    text-align: center;
+    font-weight: bold;
     height: 41px;
-    flex-basis: 80px;
-    background-color: brown;
+    justify-content: center;
     margin-right: 2px;
     padding: 0 5px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    text-align: center;
 }
 .menu-link:last-child {
     margin-right: 0px;
@@ -136,25 +94,45 @@ p {
     color: brown;
     background-color: white;
 }
-.photo-slide{
-    flex-direction: column;
-    height: auto;
-    align-items: center;
+/*Servicios menu*/
+.menu-services {
     position: relative;
+    padding: 0;
+}
+.menu-services:hover > .sub-menu {
+    display: flex;
+}
+.sub-menu {
+    position: absolute;
+    height: 123px;
+    z-index: 3;
+    top: 41px;
+    width: 100%;
+    display: none;
+}
+.service-link {
+    margin-right: 0;
     width: 100%;
 }
 
-.photo-slide img {
-    max-height: 500px;
+.photo-slide {
+    align-items: center;
+    aspect-ratio: 900 / 500;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
     width: 100%;
     object-fit: cover;
     max-width: 900px;
-}
-.slides {
-    position: relative;
+    display: none;
 }
 .fade-in-img {
-    position: absolute;
     animation: fade-in 2s;
     z-index: 2;
 }
@@ -183,6 +161,10 @@ p {
 }
 .slide-button:hover {
     background-color: rgba(255, 255, 255, 0.705);
+}
+
+.fill-remaining-vertical {
+    flex-grow: 1;
 }
 
 /*Main - info*/
@@ -231,16 +213,11 @@ p {
 
 /*Grabacion*/
 .grabacion-container {
-    flex-direction: row;
-    justify-content: center;
     max-width: 900px;
     margin: 0 4% 25px;
 }
 .grabacion-div {
-    flex-basis: 100px;
-    min-width: 330px;
     margin: 7px 2%;
-    justify-content: center;
     flex-grow: 1;
 }
 
@@ -254,17 +231,13 @@ p {
 
 /*Mezcla & mastering*/
 .container-mezcla {
-    flex-direction: row;
-    justify-content: center;
     max-width: 900px;
     margin: 0 4%;
 }
 .mezcla-div {
-    flex-grow: 1;
-    flex-basis: 40%;
+    width: 100%;
     max-width: 900px;
     justify-content: center;
-    min-width: 330px;
     margin: 3% 10px;
     align-items: center;
 }
@@ -291,27 +264,20 @@ p {
 
 /*Reamping*/
 .container-reamp {
-    flex-direction: row;
     align-items: start;
     max-width: 900px;
+    width: 100%;
+    margin: 0 2%;
 }
 .reamp-slide {
-    margin: 20px 0 0;
-    flex-basis: 330px;
     justify-content: center;
-    flex-grow: 1;
 }
 .reamp-div {
     flex-direction: column;
-    flex-grow: 1;
     justify-content: center;
-    margin: 0px 4%;
+    margin: 0px 2%;
     align-items: center;
-    flex-basis: 330px;
-}
-.reamp-div img {
     width: 100%;
-    overflow: hidden;
 }
 .reamp-div p {
     margin-bottom: 15px;
@@ -325,7 +291,8 @@ p {
     text-align: justify;
     padding: 0 30px;
     width: 100%;
-}.reamp-div ul:last-child {
+}
+.reamp-div ul:last-child {
     margin-bottom: 0;
 }
 .reamp-div p:last-child {
@@ -339,9 +306,6 @@ p {
 /*Lista de equipos*/
 .equipo-div {
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 330px;
-    max-width: 900px;
     justify-content: flex-start;
     margin: 25px 10px 0;
     align-items: center;
@@ -392,10 +356,12 @@ p {
 .social-card-container {
     margin: 30px 4% 0;
     max-width: 50%;
-    min-width: 300px;
+    min-width: 220px;
+    justify-content: space-between;
 }
 .social-card {
-    width: 33%;
+    font-size: 1.1rem;
+    /* width: 33%; */
     align-items: center;
     flex-direction: column;
 }
@@ -403,7 +369,7 @@ p {
     text-decoration: underline;
 }
 .social-card img {
-    width: 50px;  
+    width: 40px;  
     margin-bottom: 10px;  
 }
 
@@ -426,7 +392,7 @@ p {
     padding: 5px 0;
 }
 .footer p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 3px;
     margin-bottom: 3px;
 }
@@ -435,8 +401,8 @@ p {
     font-size: 1.2rem;
 }
 .address {
-    flex-direction: row;
     justify-content: right;
+    flex-wrap: wrap;
 }
 .footer-info a{
     padding-left: 10px;
@@ -448,11 +414,37 @@ p {
     font-style: italic;
 }
 
-@media (max-width: 650px) {
-    .logo-img {
-        height: 100px;
+@media (max-width: 660px) {
+    .logo {
+        width: 250px;
+    }
+    .navbar,
+    .grabacion-container,
+    .container-mezcla,
+    .container-reamp {
+        flex-direction: column;
     }
     .menu-link {
         font-size: 1rem;
+    }
+    .grabacion-div p,
+    .mezcla-div p {
+        text-align: center;
+    }
+    .mezcla-div {
+        margin: 3% 0;
+    }
+    .reamp-div {
+        width: auto;
+        margin: 0px 4%;
+    }
+    .reamp-slide {
+        margin-top: 20px;
+    }
+    .equipo-div {
+        margin: 25px 1%;
+    }
+    .equipo-div:last-child {
+        margin-bottom: 0;
     }
 }

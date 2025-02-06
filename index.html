@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Supra Aural | Inicio</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="javascript/script.js" defer></script>
-        <script src="javascript/navbar.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supra Aural | Inicio</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/script.js" defer></script>
+    <script src="./assets/navbar.js"></script>
 </head>
 <body>
-    <main class="main">
+  <main class="main">
 
-        <special-navbar></special-navbar>
+    <special-navbar></special-navbar>
 
-        <div class="container photo-slide">
-            <img src="images/inicio-1.jpeg" alt="" class="slides fade-in-img">
-            <img src="images/inicio-2.jpeg" alt="" class="slides fade-in-img">
-            <img src="images/inicio-3.jpeg" alt="" class="slides fade-in-img">
-            <img src="images/inicio-4.jpeg" alt="" class="slides fade-in-img">
-            <img src="images/inicio-5.jpeg" alt="" class="slides fade-in-img">
-            <img src="images/inicio-6.jpeg" alt="" class="slides fade-in-img">
+    <div class="flx flx-center photo-slide">
+      <img src="./assets/images/inicio-1.jpeg" alt="" class="slides">
+      <img src="./assets/images/inicio-2.jpeg" alt="" class="slides">
+      <img src="./assets/images/inicio-3.jpeg" alt="" class="slides">
+      <img src="./assets/images/inicio-4.jpeg" alt="" class="slides">
+      <img src="./assets/images/inicio-5.jpeg" alt="" class="slides">
+      <img src="./assets/images/inicio-6.jpeg" alt="" class="slides">
 
-            <div class="container slide-button-container">
-                <button class="slide-button" onclick="moveDivs(-1)">&#10094;</button>
-                <button class="slide-button" onclick="moveDivs(+1)">&#10095;</button>
-            </div>
-        </div>
+      <div class="flx slide-button-container">
+        <button class="slide-button" onclick="moveDivs(-1)">&#10094;</button>
+        <button class="slide-button" onclick="moveDivs(+1)">&#10095;</button>
+      </div>
+    </div>
 
-        <div class="container info">
-            <p>Supra Aural es un estudio de grabación ubicado en la zona céntrica de la ciudad de León, Nicaragua; a 3 cuadras del Parque Central y la Catedral. El espacio cuenta con 2 cuartos con temperatura controlada, aislados y diseñados acústicamente; equipados para posibilitar un trabajo adecuado y cómodo.</p>
-            <p>El estudio cuenta con una colección de más de 20 micrófonos de reconocidas marcas, así como diferentes preamplificadores de micrófono (de tubos y transistores), además de una gran variedad de procesadores de audio digitales y analógicos, lo que da la posibilidad de escoger el equipo adecuado para las necesidades de cada trabajo.</p>
-            <p>El sistema de grabación del estudio es multicanal, basado en Pro Tools, con 20 canales de entrada simultáneos.</p>
-        </div>
-        <div class="fill-remaining-vertical"></div>
+    <div class="flx info">
+      <p>Supra Aural es un estudio de grabación ubicado en la zona céntrica de la ciudad de León, Nicaragua; a 3 cuadras del Parque Central y la Catedral. El espacio cuenta con 2 cuartos con temperatura controlada, aislados y diseñados acústicamente; equipados para posibilitar un trabajo adecuado y cómodo.</p>
+      <p>El estudio cuenta con una colección de más de 20 micrófonos de reconocidas marcas, así como diferentes preamplificadores de micrófono (de tubos y transistores), además de una gran variedad de procesadores de audio digitales y analógicos, lo que da la posibilidad de escoger el equipo adecuado para las necesidades de cada trabajo.</p>
+      <p>El sistema de grabación del estudio es multicanal, basado en Pro Tools, con 20 canales de entrada simultáneos.</p>
+    </div>
+    <div class="fill-remaining-vertical"></div>
 
-        <special-footer></special-footer>
-    </main>
+    <special-footer></special-footer>
+  </main>
 </body>
 </html>
