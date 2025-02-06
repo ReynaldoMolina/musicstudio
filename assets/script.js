@@ -8,27 +8,28 @@ var slideIndex = 0;
 var slideIndexPrevious = 0;
 var lastPressed = 1;
 var slideContinue = true;
-
-// get elements
 var slides = document.getElementsByClassName("slides");
 
 function moveDivs(n) {
     lastPressed = n;
     slideIndex += n;
-    console.log('move Div');
+    slideShow(slideIndex);
+}
+
+function moveDivs(n) {
+    lastPressed = n;
+    slideIndex += n;
     slideShow(slideIndex);
 }
 
 function checkInterval(n) {
     //check if slideContinue
     if (slideContinue) {
-        console.log('check interval');
         setInterval(moveDivs, 4000, n);
     }
 }
 
 function slideShow(index) {
-    console.log('Slide show');
     // hide all images
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove('fade-in-img')
@@ -64,4 +65,6 @@ function slideShow(index) {
     slides[slideIndexPrevious].style.display = "block";
 }
 
+slides[0].classList.add("fade-in-img");
+slides[0].style.display = "block";
 checkInterval(1);
