@@ -228,6 +228,7 @@ p {
 .grabacion-div {
     margin: 7px 2%;
     flex-grow: 1;
+    width: 100%;
 }
 
 .grabacion-div p {
@@ -441,6 +442,9 @@ p {
     .grabacion-div p,
     .mezcla-div p {
         text-align: center;
+    }
+    .grabacion-div {
+        width: auto;
     }
     .mezcla-div {
         margin: 3% 0;
